@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    // FILE *fpw;
+    // fpw = fopen("summa.txt","w");
+    // fputs("ITs OVER",fpw);
+    // fclose(fpw);
+    FILE *fp;
+    fp=fopen("sun.txt","r");
+     char str[1000];
+    if(fp !=NULL)
+    {
+       
+        while(fgets(str,1000,fp))
+        printf("%s",str);
+    }
+
+    return 0;
+}
